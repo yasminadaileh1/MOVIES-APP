@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#editMove {
+    background: #eceeee;
+    border: 1px solid #42464b;
+    border-radius: 6px;
+    margin: 5% auto;
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "input1 input1 " "input2 input3" "input4 input4";
+    padding: 10%;
+}
+
+input[type="text"],
+label {
+    border: 1px solid #a1a3a3;
+    border-radius: 4px;
+    box-shadow: 0 1px #fff;
+    box-sizing: border-box;
+    color: #696969;
+    transition: box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+    outline: 0;
+}
+
+input[name="editedTile"] {
+    grid-area: input1;
+}
+
+input[name="editedYear"] {
+    grid-area: input2;
+}
+
+label,
+input[name="editedWatch"] {
+    grid-area: input3;
+}
+
+button {
+    grid-area: input4;
+}

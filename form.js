@@ -26,7 +26,7 @@ const renderMovies = (allMovie) => {
         movieContainer.appendChild(title);
         movieContainer.appendChild(year);
         movieContainer.appendChild(watched);
-        editButton = document.createElement('button')
+        let editButton = document.createElement('button')
         editButton.setAttribute('class', 'edit')
         editButton.textContent = 'Edit'
         movieContainer.appendChild(editButton)
@@ -35,15 +35,13 @@ const renderMovies = (allMovie) => {
             location.assign(`/edit.html#${movie.id}`)
             renderOneMovie(movie.id)
         })
-        deleteButton = document.createElement('button')
+        let deleteButton = document.createElement('button')
         deleteButton.setAttribute('class', 'delete')
         deleteButton.textContent = 'delete'
         movieContainer.appendChild(deleteButton)
         deleteButton.addEventListener('click', (e) => {
             e.preventDefault()
-            console.log('deleted')
             deleteMovie(movie.id)
-
         })
     });
 }

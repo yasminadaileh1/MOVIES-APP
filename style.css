@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    height: 5vw;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: auto;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#form {
+    background: #eceeee;
+    border: 1px solid #42464b;
+    border-radius: 6px;
+    margin: 15% auto;
+    width: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "input1 input1 " "input2 input3" "input4 input4";
+    padding: 10%;
+}
+
+input[type="text"],
+label {
+    border: 1px solid #a1a3a3;
+    border-radius: 4px;
+    box-shadow: 0 1px #fff;
+    box-sizing: border-box;
+    color: #696969;
+    transition: box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+    outline: 0;
+}
+
+input[name="title"] {
+    grid-area: input1;
+}
+
+input[name="releasedYear"] {
+    grid-area: input2;
+}
+
+label,
+input[name="watched"] {
+    grid-area: input3;
+}
+
+button[type="submit"] {
+    grid-area: input4;
+}
+
+#allMoviesContainer div {
+    width: 50%;
+    margin: 5% auto;
+    width: 70%;
+    background: #eceeee;
+    color: black;
+    text-align: center;
+    padding: 5%;
+    border: 1px solid #42464b;
+    border-radius: 6px;
+}

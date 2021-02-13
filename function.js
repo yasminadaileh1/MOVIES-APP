@@ -14,15 +14,14 @@ const getMoviesList = () => {
 }
 
 const deleteMovie = (id) => {
-    console.log('after click')
     const deleted = allMovie.filter((movie) => {
         if (movie.id !== id) {
-            // console.log(movie)
+            console.log(movie)
             return movie
         }
     })
     setMovieInStorage(deleted)
-    getMoviesList()
+    allMovie = getMoviesList()
     allMovieContainer.innerHTML = ''
-    renderMovies(deleted)
+    renderMovies(allMovie)
 }

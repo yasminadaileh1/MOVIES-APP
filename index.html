@@ -6,33 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOVIES-APP</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <header>
-
+        <nav>
+            <h1>MOVIES-APP</h1>
+        </nav>
     </header>
 
     <main>
-        <form id="form">
-            <input type="text" name="title" placeholder="Movie Title">
-            <input type="text" name="releasedYear" placeholder="Movie Released Year">
-            <label>
+        <section>
+            <div class="formContainer">
+                <form id="form">
+                    <input type="text" name="title" placeholder="Movie Title">
+                    <input type="text" name="releasedYear" placeholder="Released Year">
+                    <label>
                 <input type="checkbox" name="watched" checked> Watched
             </label>
-            <button>Add Movie</button>
+                    <button type="submit">Add Movie</button>
 
-        </form>
-        <div id="allMoviesContainer">
+                </form>
+            </div>
+            <div id="allMoviesContainer">
 
-        </div>
+            </div>
 
-        <div>
+        </section>
+
+        <!-- <div>
             <p>
                 You don't Know what to whatch
             </p>
             <button></button>
-        </div>
+        </div> -->
     </main>
 
     <footer>

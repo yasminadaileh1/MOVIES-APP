@@ -7,3 +7,9 @@ function Movie(id, title, releasedYear, watched) {
         this.releasedYear = releasedYear,
         this.watched = watched
 }
+
+const randomButton = document.getElementById('random')
+
+randomButton.addEventListener('click', (e) => {
+    location.assign(`/random.html`)
+})

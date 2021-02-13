@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIES-APP</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>MOVIES-APP</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="formContainer">
+                <form id="form">
+                    <input type="text" name="title" placeholder="Movie Title">
+                    <input type="text" name="releasedYear" placeholder="Released Year">
+                    <label>
+                <input type="checkbox" name="watched" checked> Watched
+            </label>
+                    <button type="submit">Add Movie</button>
+
+                </form>
+
+                <div>
+                    <p>
+                        You don't Know what to whatch
+                    </p>
+                    <button id="random">Random</button>
+                </div>
+            </div>
+            <div id="allMoviesContainer">
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
+    <script src="./function.js"></script>
+    <script src="./index.js"></script>
+    <script src="./form.js"></script>
+
+</body>
+
+</html>
